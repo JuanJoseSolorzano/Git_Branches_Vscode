@@ -1,6 +1,6 @@
 # Git Show Branches
 
-![Extension Icon](./images/icon.png)
+![Extension Icon](./images/icon2.png)
 
 A minimalist Visual Studio Code extension that displays only the branch names, keeping the interface simple and uncluttered. Easily view and switch Git branches directly from the Source Control view without extra details.
 
