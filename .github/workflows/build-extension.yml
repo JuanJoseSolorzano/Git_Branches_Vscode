@@ -38,12 +38,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
       - name: Build and Package
         run: vsce package
 
       - name: Get VSIX File Name
         id: get_vsix
         run: echo "VSIX_FILE=$(ls -1 *.vsix | head -n 1)" >> $GITHUB_ENV
+
+      - name: DEBUG
+        run: echo "Debugging information: ${{ env.VSIX_FILE }}"
 
       - name: Upload VSIX Artifact
         uses: actions/upload-artifact@v4
