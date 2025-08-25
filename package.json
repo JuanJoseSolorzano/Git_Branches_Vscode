@@ -2,7 +2,7 @@
   "name":"git-show-branches",
   "displayName":"Git Show Branches",
   "description": "Quick Git Branch View",
-  "version":"1.0.2",
+  "version":"1.0.4",
   "publisher": "Solorzano-JuanJose",
   "icon": "images/icon2.png",
   "engines":{"vscode":"^1.80.0"},
