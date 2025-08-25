@@ -1,0 +1,33 @@
+{
+  "name":"git-show-branches",
+  "displayName":"Git Show Branches",
+  "version":"1.0.0",
+  "publisher": "Solorzano-JuanJose",
+  "icon": "images/icon.png",
+  "engines":{"vscode":"^1.80.0"},
+  "categories": ["Visualization"],
+  "main":"./src/extension.js",
+  "contributes":{
+      "menus": {
+          "scm/title": [
+            {   
+                "command": "extension.ShowGitBranches",
+                "group": "navigation",
+                "when": "scmProvider == git"
+            }
+          ]
+      },
+    "commands":[
+      {
+        "command":"extension.ShowGitBranches",
+        "title":"Show Git Branches",
+        "icon": {
+          "light": "images/iconlight.png",
+          "dark": "images/icondark.png"
+        }
+     }
+    ]
+  },
+  "script":{},
+  "devDependencies":{}
+}
