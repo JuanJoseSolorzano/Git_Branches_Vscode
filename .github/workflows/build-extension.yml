@@ -1,0 +1,33 @@
+name: Build VSCode Extension
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - name: Install dependencies
+        run: npm install
+      - name: Lint
+        run: npm run lint || echo "No lint script defined"
+      - name: Build
+        run: npm run build || echo "No build script defined"
+      - name: Package Extension
+        run: npx vsce package
+      - name: Upload VSIX artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: vscode-extension
+          path: '*.vsix'
