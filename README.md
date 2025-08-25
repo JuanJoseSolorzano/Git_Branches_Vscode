@@ -1,6 +1,6 @@
 # Git Show Branches
 
-![Extension Icon](images/icondark.png)
+![Extension Icon](./images/icon.png)
 
 A minimalist Visual Studio Code extension that displays only the branch names, keeping the interface simple and uncluttered. Easily view and switch Git branches directly from the Source Control view without extra details.
 
@@ -17,8 +17,11 @@ A minimalist Visual Studio Code extension that displays only the branch names, k
 1. Open a folder containing a Git repository in VS Code.
 2. Go to the Source Control view.
 3. Click the branch icon button in the title bar to show all branches.
+![howTo](./images/howto1.png)
 4. Select a branch to checkout directly from the list.
+![howTo2](./images/howto2.png)
 5. You can also run the command `Show Git Branches` from the command palette (Ctrl+Shift+P).
+![howTo3](./images/howto3.png)
 
 ## Installation
 You can install **Git Show Branches** directly from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SolorzanoJuanJose.git-show-branches):

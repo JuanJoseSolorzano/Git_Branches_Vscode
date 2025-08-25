@@ -5,6 +5,10 @@
   "publisher": "Solorzano-JuanJose",
   "icon": "images/icon.png",
   "engines":{"vscode":"^1.80.0"},
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/JuanJoseSolorzano/Git_Branches_Vscode.git"
+  },
   "categories": ["Visualization"],
   "main":"./src/extension.js",
   "contributes":{
@@ -22,8 +26,8 @@
         "command":"extension.ShowGitBranches",
         "title":"Show Git Branches",
         "icon": {
-          "light": "images/iconlight.png",
-          "dark": "images/icondark.png"
+          "light": "images/iconL.svg",
+          "dark": "images/iconD.svg"
         }
      }
     ]
