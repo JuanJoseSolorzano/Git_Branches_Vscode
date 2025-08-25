@@ -1,7 +1,7 @@
 {
   "name":"git-show-branches",
   "displayName":"Git Show Branches",
-  "version":"1.0.0",
+  "version":"1.0.1",
   "publisher": "Solorzano-JuanJose",
   "icon": "images/icon2.png",
   "engines":{"vscode":"^1.80.0"},
